@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="tituloAnimado">✨ Aventura con Iris ✨</h1>
+
+
+  <!-- Personalización del jugador -->
+  <div id="configuracion">
+    <h1>¡Bienvenido al mundo de Iris!</h1>
+    <label>Tu nombre: <input type="text" id="nombreJugador"></label><br>
+    <label>Color de cabello:
+      <select id="cabelloJugador">
+        <option>Azul</option><option>Negro</option><option>Rojo</option><option>Gris</option><option>Rubio</option>
+      </select>
+    </label><br>
+    <label>Color de ojos:
+      <select id="ojosJugador">
+        <option>Verdes</option><option>Marrones</option><option>Violetas</option><option>Negros</option>
+      </select>
+    </label><br>
+    <button onclick="empezarJuego()">Comenzar historia</button>
+  </div>
+
+<button id="btnRegresar" onclick="volverAlInicio()">🔙 Regresar</button>
+
+
+  <!-- Contenedor para el juego -->
+  <div id="juego" style="display:none;">
+    <div id="historia"></div>
+    <div id="acciones"></div>
+    <canvas id="mapa" width="300" height="200"></canvas> <!-- Movimiento opcional -->
+  </div>
+
+<link rel="stylesheet" href="styles.css">
+
+  <script src="Script.js"></script>
+</body>
+</html>
+
+<div id="inventario" style="display:none;">
+  <h3>Inventario de ${jugador.nombre}</h3>
+  <ul id="listaInventario"></ul>
+</div>
+
+
+

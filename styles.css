@@ -1,0 +1,71 @@
+
+
+input, select {
+  margin: 5px;
+  padding: 5px;
+}
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6a4ebf,#9d7fe9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #51359e;
+}
+#historia {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #15b1ef;
+  border-radius: 8px;
+}
+#acciones {
+  margin-top: 10px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #6a4ebf, #9d7fe9, #f9e5ff, #d2c2fc);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  animation: cambioColores 15s infinite alternate;
+}
+
+@keyframes cambioColores {
+  0% { background: linear-gradient(135deg, #6a4ebf, #9d7fe9); }
+  50% { background: linear-gradient(135deg, #b084ff, #f9e5ff); }
+  100% { background: linear-gradient(135deg, #5f45af, #a98eff); }
+}
+
+#tituloAnimado {
+  font-size: 3em;
+  text-align: center;
+  animation: brillarTexto 2.5s ease-in-out infinite;
+  background: linear-gradient(to right, #9565d0, #e8bef9, #7d3bbe);
+}
+
+@keyframes brillarTexto {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+#btnRegresar {
+  padding: 10px 15px;
+  background-color: #bfb1ea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+#btnRegresar:hover {
+  background-color: #7a52e9;
+}
+
