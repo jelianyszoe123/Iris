@@ -45,8 +45,8 @@ function preguntarCaja() {
     "Los poderes de Iris cambiarán el mundo, y tú estarás a su lado."
   `);
   mostrarBotones([
-    { texto: "Aceptar tu misión", accion: entrenamiento },
-    { texto: "Dudar y retirarte", accion: duda }
+    { texto: "Aceptar tu misión", accion: crusarElportal },
+    { texto: "Dudar y retirarte", accion:  Abandonarlamision}
   ]);
 }
 
@@ -84,6 +84,40 @@ function beso() {
 function evasion() {
   mostrarTexto(`Decides hablar sobre la misión. Nicha respira hondo. "Tú siempre tan centrado, ${jugador.nombre}..."`);
 }
+
+function Abandonarlamision() {
+  mostrarTexto(`
+    Nicha ha abierto un portal en medio del bosque. Las palmas de Nicha brillan con intencidad con un resplandor de magia. "Hay que crusar el porta ahora"(${jugador.nombre}). Estas indeciso i no sabes que hacer.
+    Todos dan un paso alante menos tu, tienes que decidir que vas a hacer ahora ${jugador.nombre}!"
+    Nicha te mira de reojo y murmura: " Te nesecitamos ${jugador.nombre}", Pero te sientes inseguro y con miedo.
+  `);
+  }
+function crusarElportal() {
+  mostrarTexto(`
+    Luego de entrenar y que descubrieras que tienes poderes tu y tus amigos van al bosque para empezar con la mision
+    Nicha ha abierto un portal en medio del bosque. Las palmas de Nicha brillan con intencidad con un resplandor de magia. "Hay que crusar el porta ahora"(${jugador.nombre}). Estas indeciso i no sabes que hacer.
+    Todos dan un paso alante menos tu, tienes que decidir que vas a hacer ahora ${jugador.nombre}!"
+    Nicha te mira de reojo y murmura: " Te nesecitamos ${jugador.nombre}."
+  `);
+  mostrarBotones([
+    { texto: "Alejarte y huir lejos", accion: Huir },
+    { texto: "Caminar hacia alante con los demas", accion: EntrarAlportal },
+     { texto: "Caminar hacia alante con miedo", accion: miedo },
+  ]);
+}
+
+function EntrarAlportal() {
+  mostrarTexto(`Entras al portal con tus amigos asegurando la victoria en la mision, ${jugador.nombre}..."`);
+}
+
+function Huir() {
+  mostrarTexto(`Te alejas rapidamente de el portal y de tus amigos sin ti la mision fallara, ${jugador.nombre}..."`);
+}
+
+function miedo() {
+  mostrarTexto(`Tus amigos notan tu miedo y algo en el ambiente susurra: "Van a fallar si te sientes inseguro, ${jugador.nombre}..."`);
+}
+
 
 
 
