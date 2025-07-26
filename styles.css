@@ -69,3 +69,74 @@ body {
   background-color: #7a52e9;
 }
 
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+}
+
+.slide img {
+  width: 100px;
+  height: auto;
+}
+
+.text h2 {
+  font-family: 'Georgia', serif;
+  color: #222;
+  font-size: 2em;
+  margin-top: -80px;
+}
+
+.text p {
+  color: #555;
+  font-size: 1em;
+}
+
+.arrows span {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+
+.carousel {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+
+img {
+  width: 150px; /* Cambia este valor para hacerlo más pequeño o más grande */
+  height: auto; /* Mantiene la proporción original */
+}
+
+.miniatura {
+  width: 120px;
+  height: auto;
+  border-radius: 4px; /* Opcional: bordes redondeados */
+}
+
+
+
