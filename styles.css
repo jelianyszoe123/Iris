@@ -25,7 +25,29 @@ button:hover {
 #acciones {
   margin-top: 10px;
 }
+.navbar { 
+  background-color: #b084ff;
+  padding: 10px 20px;
+}
 
+.navbar{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  color: #340960,;
+text-decoration: #8f4bd3;
+font-weight: bold;
+transition: color 0.3;
+}
+
+.navbar a:hover{
+  color: #7a52e9;
+}
 
 body {
   margin: 0;
