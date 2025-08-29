@@ -165,5 +165,19 @@ img {
   border-radius: 4px; /* Opcional: bordes redondeados */
 }
 
+.navbar123{
+  background-color: #e57cff; 
+}
 
+
+.navbar123 {
+  background-image: url('Screenshot\ 2025-08-10\ 145838.png');
+  background-size: cover; /* Ajusta la imagen al tamaño de la navbar */
+  background-position: center;
+}
+
+.navbar123 {
+  background: linear-gradient(to right, #b75fff, #a0d2f8); 
+height: 60px;
+}
 
