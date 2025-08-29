@@ -172,6 +172,7 @@ img {
 
 .navbar123 {
   background-image: url('Screenshot\ 2025-08-10\ 145838.png');
+  ackground-image: url('Iris.jpg');
   background-size: cover; /* Ajusta la imagen al tamaño de la navbar */
   background-position: center;
 }
